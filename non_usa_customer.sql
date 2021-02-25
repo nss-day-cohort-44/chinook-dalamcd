@@ -1,7 +1,6 @@
 SELECT
 CustomerId,
-FirstName,
-LastName,
+FirstName || ' ' || LastName as FullName,
 Country
 FROM Customer
 WHERE NOT Country = "USA";

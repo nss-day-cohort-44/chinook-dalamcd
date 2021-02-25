@@ -1,6 +1,5 @@
 SELECT
-c.FirstName,
-c.LastName,
+c.FirstName || ' ' || c.LastName as FullName,
 c.Country,
 i.InvoiceId,
 i.InvoiceDate,

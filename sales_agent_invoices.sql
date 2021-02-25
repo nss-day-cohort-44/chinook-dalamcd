@@ -1,6 +1,5 @@
 SELECT
-e.FirstName,
-e.LastName,
+e.FirstName || ' ' || e.LastName as FullName,
 i.InvoiceId,
 i.Total
 FROM Invoice i
