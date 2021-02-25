@@ -1,6 +1,6 @@
 SELECT
 SUM(Total),
-strftime("%Y", InvoiceDate)
+strftime("%Y", InvoiceDate) as yr
 FROM Invoice
-WHERE strftime("%Y", InvoiceDate) BETWEEN "2009" AND "2011"
-GROUP BY strftime("%Y", InvoiceDate);
+WHERE yr BETWEEN "2009" AND "2011"
+GROUP BY yr;
