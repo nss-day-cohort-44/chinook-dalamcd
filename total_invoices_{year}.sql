@@ -1,3 +1,6 @@
-SELECT COUNT(InvoiceId)
+SELECT 
+COUNT(InvoiceId),
+strftime("%Y", InvoiceDate) as yr
 FROM Invoice
-WHERE InvoiceDate BETWEEN "2009-01-01 00:00:00" AND "2011-12-31 00:00:00"
+WHERE yr = "2009" or yr ="2011"
+GROUP BY yr;
